@@ -7,7 +7,7 @@ class MyTestCase(unittest.TestCase):
     def test_sample_single_word(self):
         words = ('foo', 'bar', 'foobar')
         word = generator.sample(words)
-        assert word in words
+        assert word not in words
 
     def test_sample_multiple_words(self):
         words = ('foo', 'bar', 'foobar')
